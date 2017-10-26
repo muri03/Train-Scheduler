@@ -75,10 +75,10 @@ var firstTime = snapshot.val().firstTrain;
     // console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
 
     // Next Train
-    var nextTrain = moment().add(tMinutesTillTrain);
-                   moment(nextTrain).format("LT");
+    var nextTrain = moment().add(tMinutesTillTrain, "minutes");
+    var anotherTrain = nextTrain.format("HH:mm:ss a")
 
 
 
-$("#train-table> tbody").append("<tr><td>" + train + "</td><td>" + dest + "</td><td>" + tFrequency + "</td><td>" + tMinutesTillTrain + "</td><td>" + nextTrain );
+$("#train-table> tbody").append("<tr><td>" + train + "</td><td>" + dest + "</td><td>" + tFrequency + "</td><td>" + anotherTrain+ "</td><td>" + tMinutesTillTrain + "</td><td>");
 });
