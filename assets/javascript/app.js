@@ -80,5 +80,5 @@ var firstTime = snapshot.val().firstTrain;
 
 
 
-$("#train-table> tbody").append("<tr><td>" + train + "</td><td>" + dest + "</td><td>" + tFrequency + "</td><td>" + anotherTrain+ "</td><td>" + tMinutesTillTrain + "</td><td>");
+$("#train-table> tbody").append("<tr><td>" + train + "</td><td>" + dest + "</td><td>" + tFrequency + "</td><td>" + tMinutesTillTrain+ "</td><td>" + anotherTrain  + "</td><td>");
 });
